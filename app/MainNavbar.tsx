@@ -67,7 +67,16 @@ export function MainNavbar() {
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         {menuItems.map(({ text, url }) => (
           <NavbarItem key={text} isActive={pathname.includes(url)}>
-            <Link href={url}>{text}</Link>
+            <Link
+              href={url}
+              style={{
+                color: pathname.includes(url)
+                  ? semanticColors.light.primary[500]
+                  : undefined,
+              }}
+            >
+              {text}
+            </Link>
           </NavbarItem>
         ))}
       </NavbarContent>
