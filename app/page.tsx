@@ -1,11 +1,9 @@
-import { ThemeSwitcher } from "./components/ThemeSwitcher";
-import { constants } from "./constants";
+import { Logo } from "./components/Logo";
 
 export default function Home() {
   return (
-    <div className="container">
-      <div className="p-4 pt-2">{constants.appName}</div>
-      <ThemeSwitcher />
+    <div className="flex min-h-[calc(100vh-130px)] w-full items-center justify-center">
+      <Logo size="xl" />
     </div>
   );
 }
