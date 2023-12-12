@@ -19,7 +19,9 @@ import { constants, urls } from "./constants";
 import { Logo } from "./components/Logo";
 
 const menuItems: { text: string; url: string }[] = [
-  { text: "About", url: urls.ABOUT },
+  { text: "Acerca de", url: urls.ABOUT },
+  { text: "Sensei", url: urls.SENSEI },
+  { text: "Horarios", url: urls.SCHEDULE },
 ];
 
 export function MainNavbar() {
