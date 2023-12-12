@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+const isProd = process.env.NODE_ENV === "production";
+
+const nextConfig = {
+  output: "export",
+  basePath: isProd ? "/aiki-martial-arts-web" : "",
+  images: {
+    unoptimized: true,
+  },
+};
+
+module.exports = nextConfig;
