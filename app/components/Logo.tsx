@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/images/logo.png";
-import { constants, urls } from "../constants";
+import { urls } from "../constants";
 
 const logoSizes: { [key: string]: number } = {
   xs: 40,
@@ -24,7 +24,7 @@ export function Logo({
   isLink,
   size = "md",
 }: LogoProps) {
-  const src = `${constants.basePath}${logo.src}`;
+  const src = logo;
   const imageProps = {
     className,
     height: 10,
